@@ -1,0 +1,5 @@
+library(Seurat)
+library(ggplot2)
+data=readRDS("../4_add_target_gene.rds")
+DimPlot(data,group.by="seurat_clusters",label=T,reduction="pca")
+VizDimLoadings(data, dims = 1:2, reduction = "pca")
