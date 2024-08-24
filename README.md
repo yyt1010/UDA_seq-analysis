@@ -34,4 +34,4 @@ python step4_Scrublet.py
 ```
 Rscript step5_final_matrix.R
 ```
-### scripts for uda-seq paper were in code directory grouped by figures
+### finally, downstream analyis scripts for uda-seq paper were uploaded in code directory grouped by figures.
