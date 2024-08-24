@@ -24,3 +24,14 @@ by merging all round2 index barcode matrix and demuxlet, then filtering low qual
 ```
 Rscript step3_generate_overall_matrix.R
 ```
+### step4: Scrublet doublet identification (Scrublet: Computational Identification of Cell
+Doublets in Single-Cell Transcriptomic Data.https://doi.org/10.1016/j.cels.2018.11.005)
+Use script in 0_Preprocess
+```
+python step4_Scrublet.py
+```
+### step5: get final feature x cell matatrix for downstream analysis.
+```
+Rscript step5_final_matrix.R
+```
+### scripts for uda-seq paper were in code directory grouped by figures
