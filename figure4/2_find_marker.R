@@ -1,0 +1,5 @@
+library(Seurat)
+data=readRDS("3_scissor_A_0.8_count.rds")
+data=NormalizeData(data)
+markers <- FindMarkers(object = data, ident.1 = 1,group.by="scissor",max.cells.per.ident=500)
+saveRDS(markers,file="2_markers.rds")
